@@ -45,8 +45,8 @@ export default {};
 .section-skills {
   background-color: #f0efeb;
   padding: 40px;
-  max-width: 90%; /* Consistent width */
-  margin: 0 auto; /* Center-align the section */
+  max-width: 90%;
+  margin: 0 auto;
   border-radius: 10px;
   margin-top: 50px;
 }
@@ -64,7 +64,8 @@ export default {};
 }
 
 /* Skills and Education columns */
-.skills, .education {
+.skills,
+.education {
   flex: 1;
   margin: 0 10px;
 }
@@ -78,7 +79,8 @@ h2 {
 }
 
 /* List and paragraph styling */
-ul, p {
+ul,
+p {
   color: #413c39;
 }
 
@@ -113,6 +115,43 @@ p {
 @media (max-width: 768px) {
   .info-box {
     flex-direction: column;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  ul li,
+  p {
+    font-size: 0.85rem;
+  }
+
+  h3 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-skills {
+    padding: 20px;
+  }
+
+  .info-box {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  ul li,
+  p {
+    font-size: 0.8rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
   }
 }
 </style>

@@ -1,12 +1,8 @@
 <template>
   <div>
     <!-- Header or Navbar -->
-    <!-- <header>
-      <h1>My Portfolio</h1>
-      <!-- Add a navigation bar if needed -->
-    <!-- </header> --> 
-
     <Navbar />
+
     <!-- Main content area -->
     <main>
       <NuxtPage />
@@ -26,9 +22,9 @@ export default {}
 </script>
 
 <style scoped>
-/* Body or main wrapper background color */
+/* Body and main wrapper background color */
 body {
-  background-color: white; /* Apply the solid color to the background */
+  background-color: white;
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
@@ -37,7 +33,7 @@ body {
 /* Header Styling */
 header {
   background-color: #fff;
-  color: white;
+  color: black;
   padding: 20px;
   text-align: center;
 }
@@ -45,9 +41,8 @@ header {
 /* Main content section */
 main {
   padding: 20px;
-  min-height: 100vh; /* Ensures full screen height */
-   /*background-color: #696663; Same background color as the body */
-   background-color: white; 
+  min-height: 100vh;
+  background-color: white;
 }
 
 /* Footer Styling */
@@ -56,5 +51,28 @@ footer {
   color: rgb(65, 63, 63);
   padding: 10px;
   text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  main {
+    padding: 15px;
+  }
+
+  footer {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  header, footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  main {
+    padding: 10px;
+  }
 }
 </style>
